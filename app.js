@@ -30,6 +30,9 @@ app.use(bodyparser.json());
 
 app.set('view engine', 'ejs');
 
+app.use('/url',require('./routes/url'));
+
+
 const port = process.env.PORT || 3000;
 
 app.listen(port , ()=>{
