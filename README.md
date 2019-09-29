@@ -10,7 +10,7 @@ The live version of this web app can be found here
 <br>
 
 <a href="https://shorty-build.herokuapp.com/" target="_blank" >
-Check here
+View Live
 </a>
 <br>
 
