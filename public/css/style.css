@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Kurale|Tangerine&display=swap');
+body,html{
+    margin:0;
+    padding:0;
+    background: #1b1b1b;
+    overflow-x: hidden;
+    color: aliceblue;
+}
+
+section{
+    height:auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100%;
+    width:100%;
+    overflow-x: hidden;
+    /* border:1px solid crimson; */
+}
+
+.right-50{
+    width: 40%;
+    float: right;
+    min-height:60vh;
+    height: auto;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.right-50 .image{
+    height: 600px;
+    width: 100%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.right-50 .image img{
+    width: auto;
+    height: 550px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    
+}
+
+.left-50{
+    min-height: 60vh;
+    height: auto;
+    width:50%;
+    float: left;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin-left: 2%;
+}
+
+.left-50 h1{
+    font-family: 'Kurale',serif;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 5%;
+    color: rgb(255, 174, 0);
+    font-weight: normal;
+    line-height: 1;
+
+}
+
+h1 small{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.left-50 h3{
+    font-family: 'Kurale', serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #1b1b1b;
+    text-align: right;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    color: white;
+}
+
+.left-50 .urls{
+    text-align: right!important;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    margin-left: 5%;
+}
+
+.purple{
+    font-style: italic;
+    color: rgb(255, 174, 0);
+}
+
+.yellow{
+    font-style:italic;
+    color: rgb(255, 174, 0);
+}
+
+
+.form{
+    text-align: center;
+}
+
+.form .registration-form h1{
+    font-family: 'Kurale',monospace,serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.form .registration-form p{
+    font-family: 'Kurale',monospace,serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+input[type='text']{
+    font-family: 'Kurale',monospace,serif;
+    border:  none;
+    border-collapse: collapse;
+    outline: none;
+    height: 50px;
+    width: 40vw;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: peru;
+}
+
+input[type='text']:focus{
+    border: 0;
+}
+
+input[type='submit']{
+    font-family: 'Kurale',monospace,serif;
+    border:  none;
+    border-collapse: collapse;
+    outline: none;
+    height: 50px;
+    width: 10vw;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: peru;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: 1s;
+   
+}
+
+input[type='submit']:hover{
+    background: peru;
+    color: white;
+    transition: 1s;
+}

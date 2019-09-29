@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="tiny url , url-shortner , custom-url , easy to remember url , short url , bitly , custom url">
+    <meta name="Author" content="Abhay Sharma" >
+    <meta name="Description" content="A custom url generator app which shortents the long url for you so that you can easily remember and share them.Build with love by Abhay Sharma and Acer predator" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" />
+
+    <title>Url-Shortner</title>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <section class="Home-page">
+        <div class="container">
+            <div class="left-50">
+                <div class="text-branding">
+                    <h1 data-aos="fade-up" data-aos-duration="1500" id="brand">
+                        Shorty-Build
+                        <br>
+                        <small class="small">
+                                your friendly short url generator!
+                        </small>
+                    </h1>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">
+                        Create <span class="purple">short links</span> with one <span class="yellow">click</span>
+                    </h3>
+                    <code class="urls" >
+                       
+                    </code>
+                </div>
+            </div>
+                <div class="right-50">
+                    <div class="image">
+                        <img data-aos="fade-up" data-aos-duration="1500" src="/images/code.png" alt="code">
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+
+            <div class="back"></div>
+            <div class="registration-form">
+            
+                <h1>Shorten Url</h1>
+                <p>Paste Url Here</p>
+            
+            <form method="POST" action="/url/short">
+                <div class="input-section email-section">
+                <input class="email" type="text" placeholder="ENTER YOUR URL HERE" autocomplete="off" name="longUrl"/>
+                <input type="submit" value="Go ahead">
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <% if(error){ %>
+            <p class="error yellow">
+                <%= error %>
+            </p>
+         <% } %>
+
+         <% if(url) { %>
+            <p class="yellow">
+                    <%= url %>
+                </p>
+        <% } %>
+
+    </section>
+
+    <script src="/js/index.js"></script>
+    <script>
+        var typed = new Typed('.urls', {
+            strings: [ "http://friday-herokuapp/serft", "^100 http://friday-herokuapp/fgtrsh","^1000 http://friday-herokuapp/serft"],
+            typeSpeed: 100,
+            backSpeed : 40,
+            backDelay : 400,
+            fadeOut : true,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay : 1000,
+            loop: true,
+            loopCount: Infinity, 
+            cursorChar: '_', 
+          });
+ 
+    </script>
+
+<script>
+        AOS.init({
+            once:true
+        });
+ </script>
+
+</body>
+</html>

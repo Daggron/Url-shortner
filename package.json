@@ -17,6 +17,7 @@
     "express-session": "^1.16.2",
     "mongoose": "^5.7.1",
     "shortid": "^2.2.15",
+    "typed.js": "^2.0.11",
     "valid-url": "^1.0.9"
   }
 }

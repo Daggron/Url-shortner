@@ -15,7 +15,10 @@ router.post('/short',async (req,res)=>{
             let url =  await Url.findOne({longUrl});
 
             if(url){
-                return res.status(201).send(url.shortUrl);
+                req.session.url = url.shortUrl;
+                // return res.status(201).send(url.shortUrl);
+                req.session.error = null;
+                return res.redirect('/');
             }
             else{
                 const tiny = 'http://localhost:3000/';
@@ -32,15 +35,24 @@ router.post('/short',async (req,res)=>{
 
                 await Url.create(url);
 
-                return res.send(shortUrl);
+                req.session.error = null;
+                req.session.url = url.shortUrl;
+                
+                return res.redirect('/');
+
+                // return res.send(shortUrl);
             }
         }catch{
-            return res.status(501).send("Interna server Error");
+            req.session.error = "Internal server error";
+            req.session.url = null;
+            return res.status(501).redirect("/");
         }
 
     }
     else{
-        return res.status(401).send("Please enter a valid url")
+        req.session.error = "Please Enter a valid url";
+        req.session.url = null;
+        return res.status(401).redirect('/');
     }
 
 
