@@ -1,5 +1,5 @@
 # Url-shortner
-A custom url shortner made with node and acer predator
+A custom url shortner made with node and acer predator.  
 
 A url-shortner app made to short the long urls so that they can be used easily.
 
@@ -37,7 +37,7 @@ Ejs (As view engine)
 </ul>
 
 <br>
-That's all folk's,  Have a good day.
+That's all folk's,  Have a good day!
 <br>
 Happy Programming , Peace.<img src="https://www.dictionary.com/e/wp-content/uploads/2018/08/victory-hand.png" width="20px" alt="Peace Emoji">
 
